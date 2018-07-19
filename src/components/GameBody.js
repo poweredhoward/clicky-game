@@ -1,11 +1,13 @@
 import React from "react";
 import Picture from "./Picture";
-import pictures from "../pictures.json"
+import pictures from "../pictures.json";
+import Header from "./Header";
 
 class GameBody extends React.Component{
     // Holds each picture and whether or not its been clicked
     state = {
-        num_correct = 0
+        score: 0,
+        highScore: 0
     }
 
     //initialize state object with pictures set to false
@@ -22,8 +24,23 @@ class GameBody extends React.Component{
             [clicked] : true
         });
         console.log(this.state);
+        //Repeat click, bad move
         if(this.state[clicked]){
-            console.log("Already been clicked!")
+            console.log("Already been clicked!");
+            this.setState({score: 0});
+            this.setState({highScore: 0});
+
+        }
+        //good click
+        else{
+            let currScore = this.state.score;
+            let high_Score = this.state.highScore;
+            console.log("High: " + high_Score);
+            this.setState({score: currScore + 1});
+            if(currScore + 1 > this.state.highScore){
+                this.setState({highScore: currScore + 1})
+            }
+
         }
 
     }
@@ -47,7 +64,10 @@ class GameBody extends React.Component{
         
 
         return (
-            pic_elements
+            <div>
+                <Header score={this.state.score} high_score={this.state.highScore} />
+                {pic_elements}
+            </div>
         )
     }
    
