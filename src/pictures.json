@@ -1,0 +1,66 @@
+[
+    {
+      "id": 1,
+
+      "name" : "bengals",
+      "image": "/images/bengals.png"
+    },
+    {
+      "id": 2,
+      "name" : "bills",
+      "image": "/images/bills.png"
+    },
+    {
+      "id": 3,
+      "name" : "browns",
+      "image": "/images/browns.png"
+    },
+    {
+      "id": 4,
+      "name" : "colts",
+      "image": "/images/colts.png"
+      
+    },
+    {
+      "id": 5,
+      "name" : "dolphins",
+      "image": "/images/dolphins.jpg"
+    },
+    {
+      "id": 6,
+      "name" : "jaguars",
+      "image": "/images/jaguars.jpg"
+     
+    },
+    {
+      "id": 7,
+      "name" : "jets",
+      "image": "/images/jets.png"
+    },
+    {
+      "id": 8,
+      "name" : "patriots",
+      "image": "/images/patriots.png"
+    },
+    {
+      "id": 9,
+      "name" : "ravens",
+      "image": "/images/ravens.png"
+    },
+    {
+      "id": 10,
+      "name" : "steelers",
+      "image": "/images/steelers.png"
+    },
+    {
+      "id": 11,
+      "name" : "texans",
+      "image": "/images/texans.png"
+    },
+    {
+      "id": 12,
+      "name" : "titans",
+      "image": "/images/titans.png"
+    }
+  ]
+  
