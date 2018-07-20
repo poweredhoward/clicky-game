@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import GameBody from "./components/GameBody";
+import styles from "./App.css";
 
 const App = function(){
   return (

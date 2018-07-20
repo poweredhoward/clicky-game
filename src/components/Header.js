@@ -1,13 +1,14 @@
 import React from "react";
 
+const styles={
+    height: "100px",
+    padding: "10px"
+}
+
 const Header = props =>{
     console.log(props)
     return(
-        <div>
-            <div className="navbar">
-
-            </div>
-            <div className="jumbotron">
+            <div style={styles} className="jumbotron text-center">
                 <h2>
                     Score: {props.score}    High Score: {props.high_score}
                 </h2>
@@ -16,7 +17,6 @@ const Header = props =>{
                     Don't click the same picture twice!
                 </h3>
             </div>
-        </div>
     )
 }
 

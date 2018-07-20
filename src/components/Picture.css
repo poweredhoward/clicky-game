@@ -1,0 +1,12 @@
+.Pic:hover{
+    /* border: solid 3px rgb(197, 195, 195); */
+    box-shadow: 0 0 40px rgb(177, 177, 240);
+    transform: scale(0.9)
+}
+
+.Pic{
+    margin: 0px;
+    position: relative;
+    left: 4%;
+    transform: scale(0.8)
+}

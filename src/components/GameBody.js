@@ -2,6 +2,11 @@ import React from "react";
 import Picture from "./Picture";
 import pictures from "../pictures.json";
 import Header from "./Header";
+// import styles from "../Picture.css";
+
+const styles = {
+    backgroundColor: "teal"
+}
 
 class GameBody extends React.Component{
     // Holds each picture and whether or not its been clicked
@@ -51,7 +56,8 @@ class GameBody extends React.Component{
             return <Picture key = {k} 
             click = {this.handleClick} 
             name = {pic.name}
-            image = {pic.image} />
+            image = {pic.image} 
+           />
         });
 
         //Random shuffling of picture components
@@ -64,7 +70,7 @@ class GameBody extends React.Component{
         
 
         return (
-            <div>
+            <div className="container"  style={styles}>
                 <Header score={this.state.score} high_score={this.state.highScore} />
                 {pic_elements}
             </div>
